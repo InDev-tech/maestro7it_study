@@ -16,12 +16,23 @@ def create_linked_list(values: list) -> ListNode:
         current = current.next
     return head
 
+def print_linked_list(head: ListNode, separator: str = ' → ', end_marker: str = " → None") -> None:
+    if head is None:
+        print("None")
+        return
+    current = head
+    values = []
+    while current:
+        values.append(f'{current.val}')
+        current = current.next
+    return separator.join(values)
+
 node = ListNode(1)
 next_node = ListNode(2)
 node.next = next_node
-print(node.val)
-print(node.next)
-print(next_node.val)
-print(next_node.next)
-print(node.__repr__())
-print(create_linked_list([1, 2, 3]))
+# print(node.val)
+# print(node.next)
+# print(next_node.val)
+# print(next_node.next)
+# print(node.__repr__())
+print(print_linked_list(create_linked_list([5, 25, 3])))
