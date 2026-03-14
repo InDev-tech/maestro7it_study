@@ -47,3 +47,12 @@ def binary_search(arr, target):
 sorted_list = [2, 5, 8, 12, 16, 23, 38, 56]
 print(binary_search(sorted_list, 23)) # Вывод: 5
 print(binary_search(sorted_list, 1))  # Вывод: -1
+
+'''
+1 - 64
+64/2 = 32
+32/2 = 16
+16/2 = 8
+8/2 = 4
+4/2 = 2
+'''
