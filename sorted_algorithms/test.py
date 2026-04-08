@@ -1,15 +1,11 @@
-def binary_search(lst, target):
-    left, right = 0, len(lst)-1
-    while left <= right:
-        mid = (left + right) // 2
-        if lst[mid] == target:
-            return mid
-        elif lst[mid] < target:
-            left += 1
+def sqrt_search(target, eps=1e-6):
+    left, right = 1, max(1, target)
+    while right - left >= eps:
+        mid = (left + right) / 2
+        if mid * mid < target:
+            left = mid
         else:
-            right -= 1
-    return -1
+            right = mid
+    return (left + right) / 2
 
-sorted_list = [2, 5, 8, 12, 16, 23, 38, 56]
-print(binary_search(sorted_list, 23)) # Вывод: 5
-print(binary_search(sorted_list, 1))  # Вывод: -1
+print(sqrt_search(5))
