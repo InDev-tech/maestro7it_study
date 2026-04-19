@@ -308,3 +308,7 @@ class PayPalProcessor(PaymentProcessor):
 📲 **Telegram №2:** [@dupley_maxim_1999](https://t.me/dupley_maxim_1999)
 
 📅 **Дата:** 07.02.2026
+
+
+Пузырьковая сортировка
+Сортировка вставками
