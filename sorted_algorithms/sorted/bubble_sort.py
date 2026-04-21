@@ -33,7 +33,7 @@ def bubble_sort(arr):
 
 # Пример использования и проверки
 if __name__ == "__main__":
-    test_array = [-13, 64, 34, 25, 12, -15, 22, 11, 90]
+    test_array = [-13, 64, 34, 25, 12, -15, 22, 90, 11]
     
     print(f"Исходный массив: {test_array}")
-    print(f"Пузырьковая:      {bubble_sort(test_array.copy())}")
+    print(f"Пузырьковая:     {bubble_sort(test_array.copy())}")
